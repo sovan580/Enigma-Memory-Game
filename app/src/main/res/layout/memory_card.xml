@@ -20,7 +20,7 @@
             android:layout_height="match_parent"
             android:background="#fff"
             android:scaleType="centerCrop"
-            android:src="@drawable/back"/>
+            android:src="@drawable/code"/>
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>

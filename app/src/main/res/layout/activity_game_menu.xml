@@ -5,53 +5,68 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".GameMenu"
-    android:background="#100E17">
+    android:background="@drawable/main_bg">
+
     <ImageView
+        android:id="@+id/gameLogo"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:src="@drawable/enigma"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:id="@+id/gameLogo"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="PLAY GAME"
-        android:textSize="20sp"
+        android:src="@drawable/enigma" />
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_below="@+id/gameLogo"
-        android:background="@drawable/rounded_buttons"
-        android:layout_marginRight="30dp"
-        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="MEMORY GAME"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <Button
         android:id="@+id/play_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
-        android:textStyle="bold"
-        android:textColor="#fff"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CREATE YOUR GAME"
-        android:textSize="20sp"
-        android:layout_below="@+id/play_game"
-        android:background="@drawable/rounded_buttons"
         android:layout_marginRight="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_buttons"
+        android:text="PLAY GAME"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
         android:id="@+id/create_game"
-        android:textStyle="bold"
-        android:textColor="#fff"/>
-    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DOWLOAD GAME"
-        android:textSize="20sp"
-        android:layout_below="@+id/create_game"
-        android:background="@drawable/rounded_buttons"
-        android:layout_marginRight="30dp"
+        android:layout_below="@+id/play_game"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:textColor="#fff"
-        android:id="@+id/download_game"/>
+        android:layout_marginRight="30dp"
+        android:background="@drawable/rounded_buttons"
+        android:text="CREATE YOUR GAME"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/download_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_game"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/rounded_buttons"
+        android:text="DOWLOAD GAME"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>
