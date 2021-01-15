@@ -9,15 +9,18 @@ import android.view.View
 import android.view.WindowManager
 import android.widget.ImageView
 import android.widget.TextView
+import me.ibrahimsn.particle.ParticleView
 
 class SplashScreen : Activity() {
     private lateinit var logo:ImageView
     private lateinit var start:TextView
+    private lateinit var particleView: ParticleView
     override fun onCreate(savedInstanceState: Bundle?) {
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
         logo=findViewById(R.id.logo)
+        particleView = findViewById(R.id.particleView)
         start=findViewById(R.id.start)
         val i=logo.animate().apply {
             duration=3000
@@ -28,5 +31,14 @@ class SplashScreen : Activity() {
             startActivity(intent)
             finish()
         }
+    }
+    override fun onResume() {
+        super.onResume()
+        particleView.resume()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        particleView.pause()
     }
 }

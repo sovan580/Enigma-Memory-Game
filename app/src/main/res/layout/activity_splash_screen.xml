@@ -6,12 +6,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreen"
-    android:background="@drawable/background">
+    android:background="#100E17">
+    <me.ibrahimsn.particle.ParticleView
+        android:id="@+id/particleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:particleCount="60"
+        app:particleMinRadius="3"
+        app:particleMaxRadius="10"
+        app:particlesBackgroundColor="#100E17"
+        app:particleColor="#a9a9a9"
+        app:particleLineColor="#c0c0c0"
+        app:particleLinesEnabled="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <ImageView
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:src="@drawable/logo"
-        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/enigma"
+        android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
         android:id="@+id/logo" />
     <TextView
@@ -19,10 +33,10 @@
         android:layout_height="wrap_content"
         android:text="TAP TO START"
         android:id="@+id/start"
-        android:textSize="30sp"
+        android:textSize="24sp"
         android:layout_below="@+id/logo"
         android:layout_centerHorizontal="true"
-        android:textColor="#ffF"
-        android:layout_marginTop="20dp"/>
+        android:textColor="#35ff1f"/>
+</RelativeLayout>
 
 </RelativeLayout>

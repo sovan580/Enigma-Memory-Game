@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".GameMenu"
-    android:background="@drawable/background">
+    android:background="#100E17">
     <ImageView
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/enigma"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
         android:id="@+id/gameLogo"/>
@@ -52,7 +52,6 @@
         android:textStyle="bold"
         android:textColor="#fff"
         android:id="@+id/download_game"/>
-
 
 
 </RelativeLayout>
