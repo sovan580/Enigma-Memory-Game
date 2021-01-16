@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".GameMenu"
-    android:background="@drawable/main_bg">
+    android:background="@drawable/back">
 
     <ImageView
         android:id="@+id/gameLogo"
@@ -13,7 +13,7 @@
         android:layout_height="250dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:src="@drawable/enigma" />
 
     <TextView
@@ -67,6 +67,5 @@
         android:textColor="#000"
         android:textSize="20sp"
         android:textStyle="bold" />
-
 
 </RelativeLayout>

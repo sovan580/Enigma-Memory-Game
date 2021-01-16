@@ -19,8 +19,8 @@ class SplashScreen : Activity() {
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
-        logo=findViewById(R.id.logo)
         particleView = findViewById(R.id.particleView)
+        logo=findViewById(R.id.logo)
         start=findViewById(R.id.start)
         val i=logo.animate().apply {
             duration=3000
@@ -41,4 +41,5 @@ class SplashScreen : Activity() {
         super.onPause()
         particleView.pause()
     }
+
 }

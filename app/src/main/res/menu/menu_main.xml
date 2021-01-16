@@ -3,12 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/refresh"
-        android:icon="@drawable/snap"
+        android:icon="@drawable/ic_refresh"
         android:title="Refresh"
         app:showAsAction="always"/>
     <item
         android:id="@+id/new_size"
-        android:title="Choosse New Size"
+        android:title="Choose New Size"
         app:showAsAction="never" />
     <item android:title="Create Custom Game"
         android:id="@+id/custom"/>

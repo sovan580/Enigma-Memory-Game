@@ -10,9 +10,11 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioGroup
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatDelegate
 import com.ankit.mymemorygame.models.BoardSize
 import com.ankit.mymemorygame.utils.EXTRA_BOARD_SIZE
 import com.ankit.mymemorygame.utils.EXTRA_GAME_NAME
+import me.ibrahimsn.particle.ParticleView
 
 class GameMenu : Activity() {
     companion object{
@@ -22,6 +24,7 @@ class GameMenu : Activity() {
     private lateinit var createGame:Button
     private lateinit var downloadGame:Button
     override fun onCreate(savedInstanceState: Bundle?) {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game_menu)
         playGame=findViewById(R.id.play_game)

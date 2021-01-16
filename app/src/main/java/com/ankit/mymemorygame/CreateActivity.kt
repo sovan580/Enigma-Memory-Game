@@ -21,6 +21,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.ankit.mymemorygame.models.BoardSize
@@ -50,6 +51,7 @@ class CreateActivity : AppCompatActivity() {
     private val storage=Firebase.storage
     private val db=Firebase.firestore
     override fun onCreate(savedInstanceState: Bundle?) {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create)
         rvImagePicker=findViewById(R.id.rvImagePicker)

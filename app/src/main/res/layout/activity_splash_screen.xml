@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreen"
-    android:background="#100E17">
+    android:background="@drawable/back">
     <me.ibrahimsn.particle.ParticleView
         android:id="@+id/particleView"
         android:layout_width="match_parent"
@@ -18,9 +18,6 @@
         app:particleColor="#a9a9a9"
         app:particleLineColor="#c0c0c0"
         app:particleLinesEnabled="true" />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="350dp"
@@ -37,6 +34,5 @@
         android:layout_below="@+id/logo"
         android:layout_centerHorizontal="true"
         android:textColor="#35ff1f"/>
-</RelativeLayout>
 
 </RelativeLayout>
